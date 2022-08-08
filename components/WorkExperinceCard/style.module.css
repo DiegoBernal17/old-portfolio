@@ -1,0 +1,12 @@
+.card {
+  border-left: 1px solid #ab094e;
+  padding-left: 8px;
+}
+
+.title {
+  margin-bottom: 0;
+}
+
+.dates {
+  color: #aaa;
+}
