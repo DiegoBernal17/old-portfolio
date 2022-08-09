@@ -1,6 +1,6 @@
 import styles from "./style.module.css";
 
-interface IProps {
+export interface WorkExperienceCardProps {
   position: string;
   companyName?: string;
   city?: string;
@@ -9,7 +9,7 @@ interface IProps {
   tasks: string[];
 }
 
-const WorkExperienceCard: React.FC<IProps> = ({
+const WorkExperienceCard: React.FC<WorkExperienceCardProps> = ({
   position,
   companyName,
   city,

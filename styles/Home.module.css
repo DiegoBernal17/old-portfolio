@@ -13,6 +13,7 @@
 .rightSection {
   margin-left: 30px;
   padding-right: 30px;
+  position: relative;
 }
 
 .info {
@@ -59,6 +60,26 @@
 
 .proficiencies ul {
   padding-inline-start: 14px;
+}
+
+.languageContainer {
+  height: 18px;
+  text-align: right;
+  margin-right: -20px;
+}
+
+.languageButton {
+  margin-left: 10px;
+  display: inline-block;
+  cursor: pointer;
+  background-color: #eee;
+  padding: 0 10px;
+  border-radius: 0 0 8px 8px;
+}
+
+.languageButton:hover {
+  background-color: #ccc;
+  box-shadow: 0 0 4px #aaa;
 }
 
 @media only screen and (max-width: 768px/* 1024px */) {
