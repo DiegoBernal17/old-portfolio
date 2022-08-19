@@ -1,22 +1,35 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import Image from "next/image";
 import { useTranslation } from "react-i18next";
 import EducationCard, { EducationCardProps } from "../components/EducationCard";
+import LanguageSelector from "../components/LanguageSelector";
 import WorkExperienceCard, {
   WorkExperienceCardProps,
 } from "../components/WorkExperinceCard";
 import styles from "../styles/Home.module.css";
 
+const data = {
+  location: "Saltillo, Coahuila, México",
+  phoneNumber: "8442220828",
+  email: "diego.bernal17@gmail.com",
+  birthday: "17-01-1996",
+  links: {
+    linkedin: "https://linkedin.com/in/diegopbernal/",
+    platzi: "https://platzi.com/p/diego-p-bernal/",
+    github: "https://github.com/DiegoBernal17",
+  },
+  englishLevel: "B1",
+  skills: {
+    frontend: "HTML, CSS, Javascript, React, NextJS, Svelte",
+    backend: "NodeJS, Express, NestJS, GraphQL",
+    devops:
+      "Linux, terminal, ssl, ssh, process monitoring, aws, deployments, CI/CD, Server provisioning, DBA",
+    databases: "MariaDB, MongoDB, Firebase",
+  },
+};
+
 const Home: NextPage = () => {
-  const { t, i18n } = useTranslation();
-
-  const changeLanguage = (language: "es" | "en") => () => {
-    i18n.changeLanguage(language, (err, t) => {
-      if (err) return console.log("something went wrong loading", err);
-    });
-  };
-
+  const { t } = useTranslation();
   return (
     <div className={styles.container}>
       <Head>
@@ -35,54 +48,41 @@ const Home: NextPage = () => {
             </h2>
             <div className={styles.divider} style={{ width: 100 }} />
             <p className={styles.specialist}>Fullstack Javascript Developer</p>
+            <p className={styles.description}>{t("description")}</p>
           </div>
           <div className={styles.personalData}>
             <h3>{t("personalInformation")}</h3>
             <p>
               <b>{t("location")}:</b>
               <br />
-              Saltillo, Coahuila, México
+              {data.location}
             </p>
             <p>
               <b>{t("phoneNumber")}:</b>
               <br />
-              8442220828
+              {data.phoneNumber}
             </p>
             <p>
               <b>{t("email")}:</b>
               <br />
-              <a href="mailto:diego.bernal17@gmail.com">
-                diego.bernal17@gmail.com
-              </a>
+              <a href={`mailto:${data.email}`}>{data.email}</a>
             </p>
             <p>
               <b>{t("birthday")}:</b>
               <br />
-              17-01-1996
+              {data.birthday}
             </p>
           </div>
           <div className={styles.divider} />
           <div className={styles.links}>
             <h3>Links</h3>
-            <a
-              href="https://linkedin.com/in/diegopbernal/"
-              target="_blank"
-              rel="noreferrer"
-            >
+            <a href={data.links.linkedin} target="_blank" rel="noreferrer">
               Linkedin
             </a>
-            <a
-              href="https://platzi.com/p/diego-p-bernal/"
-              target="_blank"
-              rel="noreferrer"
-            >
+            <a href={data.links.platzi} target="_blank" rel="noreferrer">
               Platzi
             </a>
-            <a
-              href="https://github.com/DiegoBernal17"
-              target="_blank"
-              rel="noreferrer"
-            >
+            <a href={data.links.github} target="_blank" rel="noreferrer">
               Github
             </a>
           </div>
@@ -104,36 +104,13 @@ const Home: NextPage = () => {
               {t("languages.spanish")}: <b>{t("languages.native")}</b>
             </p>
             <p>
-              {t("languages.english")}: <b>B1</b>
+              {t("languages.english")}: <b>{data.englishLevel}</b>
             </p>
           </div>
         </div>
 
         <div className={styles.rightSection}>
-          <div className={styles.languageContainer}>
-            <div
-              className={styles.languageButton}
-              onClick={changeLanguage("en")}
-            >
-              <Image
-                src="/english.png"
-                width={32}
-                height={32}
-                alt="English version"
-              />
-            </div>
-            <div
-              className={styles.languageButton}
-              onClick={changeLanguage("es")}
-            >
-              <Image
-                src="/spanish.png"
-                width={32}
-                height={32}
-                alt="Spanish version"
-              />
-            </div>
-          </div>
+          <LanguageSelector />
           <div className={styles.professionalProfile}>
             <h2 className={styles.title}>{t("professionalProfile.title")}</h2>
             <p>{t("professionalProfile.content")}</p>
@@ -175,13 +152,16 @@ const Home: NextPage = () => {
             <h2 className={styles.title}>{t("skills.title")}</h2>
             <ul>
               <li>
-                <b>Frontend:</b> HTML, CSS, Javascript, React, NextJS
+                <b>Frontend:</b> {data.skills.frontend}
               </li>
               <li>
-                <b>Backend:</b> NodeJS, Express, NestJS, GraphQL
+                <b>Backend:</b> {data.skills.backend}
               </li>
               <li>
-                <b>{t("skills.database")}:</b> MariaDB, MongoDB, Firebase
+                <b>DevOps:</b> {data.skills.devops}
+              </li>
+              <li>
+                <b>{t("skills.database")}:</b> {data.skills.databases}
               </li>
               <li>{t("skills.others")}</li>
             </ul>

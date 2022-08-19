@@ -6,8 +6,8 @@ export const WORK_EXPERIENCE_spanish = [
     start: "Julio 2019",
     end: "Presente",
     tasks: [
-      "Encargado de los proyectos que impliquen el desarrollo web (JS).",
-      "Desarrollé un ERP (con React y Node) y otros sistemas web para diversos clientes.",
+      "Encargado de los proyectos que impliquen el desarrollo web (JS), como un sistema de manejo de eventos sociales, un sistema de un comedor para el manejo de las de ordenes de platillos.",
+      "Desarrollé junto a un equipo pequeño un ERP (con React y Node), el cual fui el encargado de seleccionar las tecnologías y su arquitectura.",
     ],
   },
   {
@@ -45,11 +45,11 @@ export const WORK_EXPERIENCE_english = [
     position: "Web Developer",
     companyName: "VOTH SOLUTIONS",
     city: "Saltillo",
-    start: "Julio 2019",
-    end: "Current",
+    start: "July 2019",
+    end: "Present",
     tasks: [
-      "Responsible for projects that involve web development (JS).",
-      "I developed an ERP (with React and Node) and other web systems for various clients.",
+      "Responsible for projects that involve web development (JS), such as a social event management system, a dining room system for dish order management, and more internal projects.",
+      "Together with a small team, I developed an ERP (with React and Node), which I was in charge of selecting the technologies and their architecture.",
     ],
   },
   {

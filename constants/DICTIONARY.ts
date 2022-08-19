@@ -6,6 +6,8 @@ import {
 
 export const english = {
   personalInformation: "Personal information",
+  description:
+    "Building quality websites and applications with HTML, CSS, and JavaScript.",
   location: "Location",
   phoneNumber: "Phone number",
   email: "Email",
@@ -30,7 +32,7 @@ export const english = {
   professionalProfile: {
     title: "Professional profile",
     content:
-      "Enthusiastic about technology, programming, and learning something new every day. Wihth more than 4 years using Javascript and programming from an early age. Looking to improve my skills as programmer and as a person.",
+      "Enthusiastic about technology, programming and learning something new every day. With more than 4 years of experience with Javascript. I have been a programmer from an early age. I seek to improve my skills as a programmer and as a person. I like to teach and motivate other people what I have learned and how to improve their skills. I'm a person who is passionate about quality in code.",
   },
   workExperience: {
     title: "Work experience",
@@ -54,6 +56,8 @@ export const english = {
 
 export const spanish = {
   personalInformation: "Datos personales",
+  description:
+    "Construyendo sitios y aplicaciones web de calidad con HTML, CSS y Javascript",
   location: "Ubicación",
   phoneNumber: "Teléfono",
   email: "Correo electrónico",
@@ -77,10 +81,7 @@ export const spanish = {
   },
   professionalProfile: {
     title: "Perfil profesional",
-    content: `Entusiasta de la tecnología, la programación y de aprender algo
-    nuevo cada día. Con más de 4 años usando Javascript y programando
-    desde temprana edad. Buscando mejorar mis habilidades como
-    programador y como persona.`,
+    content: `Entusiasta de la tecnología, de la programación y de aprender algo nuevo cada día. Con más de 4 años de experiencia usando Javascript y programador desde temprana edad. Busco mejorar mis habilidades como programador y como persona. Me gusta enseñar y motivar a otras personas de lo que he aprendido y de cómo mejorar sus habilidades. Persona apasionada por la calidad en el código y las buenas prácticas.`,
   },
   workExperience: {
     title: "Experiencia laboral",
