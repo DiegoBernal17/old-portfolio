@@ -1,18 +1,22 @@
+import React from "react";
 import Image from "next/image";
-import { useTranslation } from "react-i18next";
+import { useTranslation } from "../../i18n/client";
 import styles from "./styles.module.css";
 
-const LanguageSelector = () => {
-  const { i18n } = useTranslation();
+const LanguageSelector: React.FC<{ lng: string }> = ({ lng }) => {
+  const { i18n } = useTranslation(lng, "translation");
 
   const changeLanguage = (language: "es" | "en") => () => {
-    i18n.changeLanguage(language, (err, t) => {
+    i18n.changeLanguage(language, (err) => {
       if (err) return console.log("something went wrong loading", err);
     });
   };
 
   return (
     <div className={styles.languageContainer}>
+      <button onClick={() => window.print()} className={styles.downloadButton}>
+        Download CV
+      </button>
       <div className={styles.languageButton} onClick={changeLanguage("en")}>
         <Image
           src="/english.png"

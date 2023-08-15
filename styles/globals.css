@@ -5,6 +5,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   color: #222;
+  margin: 0px;
 }
 
 a {
@@ -14,6 +15,16 @@ a {
 
 * {
   box-sizing: border-box;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+  color-adjust: exact;
+}
+
+@page {
+  size: Tabloid; /* auto is the initial value */
+  margin: 0mm; /* this affects the margin in the printer settings */
+  /* transform: scale(0.43);
+  transform-origin: 0 0; */
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -26,3 +37,16 @@ a {
   }
 }
  */
+
+@media print {
+  .noPrint {
+    display: none;
+    font-style: italic;
+    opacity: 0.5;
+  }
+}
+@media screen {
+  .onlyPrint {
+    display: none;
+  }
+}

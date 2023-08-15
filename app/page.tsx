@@ -1,6 +1,5 @@
-import type { NextPage } from "next";
-import Head from "next/head";
-import { useTranslation } from "react-i18next";
+"use client";
+import { useTranslation } from "../i18n/client";
 import EducationCard, { EducationCardProps } from "../components/EducationCard";
 import LanguageSelector from "../components/LanguageSelector";
 import WorkExperienceCard, {
@@ -28,16 +27,10 @@ const data = {
   },
 };
 
-const Home: NextPage = () => {
-  const { t } = useTranslation();
+const Page = ({ params: { lng } }: { params: { lng: string } }) => {
+  const { t } = useTranslation(lng, "translation");
   return (
     <div className={styles.container}>
-      <Head>
-        <title>Curriculum vitae</title>
-        <meta name="description" content="Mi Curriculum Vitae" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
       <main className={styles.main}>
         <div className={styles.leftSection}>
           <div className={styles.info}>
@@ -60,7 +53,8 @@ const Home: NextPage = () => {
             <p>
               <b>{t("phoneNumber")}:</b>
               <br />
-              {data.phoneNumber}
+              <span className="onlyPrint">{data.phoneNumber}</span>
+              <span className="noPrint">{t("downloadToSeeMessage")}</span>
             </p>
             <p>
               <b>{t("email")}:</b>
@@ -76,15 +70,21 @@ const Home: NextPage = () => {
           <div className={styles.divider} />
           <div className={styles.links}>
             <h3>Links</h3>
-            <a href={data.links.linkedin} target="_blank" rel="noreferrer">
-              Linkedin
-            </a>
-            <a href={data.links.platzi} target="_blank" rel="noreferrer">
-              Platzi
-            </a>
-            <a href={data.links.github} target="_blank" rel="noreferrer">
-              Github
-            </a>
+            <div className={styles.linkContainer}>
+              <a href={data.links.linkedin} target="_blank" rel="noreferrer">
+                Linkedin
+              </a>
+            </div>
+            <div className={styles.linkContainer}>
+              <a href={data.links.platzi} target="_blank" rel="noreferrer">
+                Platzi
+              </a>
+            </div>
+            <div className={styles.linkContainer}>
+              <a href={data.links.github} target="_blank" rel="noreferrer">
+                Github
+              </a>
+            </div>
           </div>
           <div className={styles.divider} />
           <div className={styles.proficiencies}>
@@ -108,9 +108,8 @@ const Home: NextPage = () => {
             </p>
           </div>
         </div>
-
         <div className={styles.rightSection}>
-          <LanguageSelector />
+          <LanguageSelector lng={lng} />
           <div className={styles.professionalProfile}>
             <h2 className={styles.title}>{t("professionalProfile.title")}</h2>
             <p>{t("professionalProfile.content")}</p>
@@ -174,6 +173,7 @@ const Home: NextPage = () => {
       </main>
     </div>
   );
+  return <div>Hola</div>;
 };
 
-export default Home;
+export default Page;

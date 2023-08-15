@@ -61,8 +61,11 @@
   margin-right: -30px;
 }
 
-.links a {
-  display: block;
+.linkContainer {
+  padding: 4px 4px 4px 0;
+}
+.linkContainer a {
+  padding: 4px 4px 4px 0;
 }
 
 .proficiencies ul {

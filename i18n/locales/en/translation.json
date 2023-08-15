@@ -1,0 +1,99 @@
+{
+  "downloadToSeeMessage": "Download the CV to see it",
+  "personalInformation": "Personal information",
+  "description": "Building quality websites and applications with HTML, CSS, and JavaScript.",
+  "location": "Location",
+  "phoneNumber": "Phone number",
+  "email": "Email",
+  "birthday": "Birthday",
+  "proficiencies": {
+    "name": "Proficiencies",
+    "content": [
+      "Organization",
+      "Proactivity",
+      "Responsibility",
+      "Problems resolution",
+      "Teamwork",
+      "Independent Learning"
+    ]
+  },
+  "languages": {
+    "title": "Languages",
+    "spanish": "Spanish",
+    "english": "English",
+    "native": "First language"
+  },
+  "professionalProfile": {
+    "title": "Professional profile",
+    "content": "Enthusiastic about technology, programming and learning something new every day. With more than 5 years of experience with Javascript. I have been a programmer from an early age. I seek to improve my skills as a programmer and as a person. I like to teach and motivate other people what I have learned and how to improve their skills. I'm a person who is passionate about quality in code."
+  },
+  "workExperience": {
+    "title": "Work experience",
+    "content": [
+      {
+        "position": "Web Developer",
+        "companyName": "VOTH SOLUTIONS",
+        "city": "Saltillo",
+        "start": "July 2019",
+        "end": "Present",
+        "tasks": [
+          "Responsible for projects that involve web development (JS), such as a social event management system, a dining room system for dish order management, and more internal projects.",
+          "Together with a small team, I developed an ERP (with React and Node), which I was in charge of selecting the technologies and their architecture."
+        ]
+      },
+      {
+        "position": "Software developer",
+        "companyName": "A&T SORT COMPANY",
+        "city": "Saltillo",
+        "start": "2018",
+        "end": "2019",
+        "tasks": [
+          "Maintenance and creation of new modules for the internal system (ERP) made with PHP.",
+          "I was part of the beginning of their new system and developed their mobile app using React Native."
+        ]
+      },
+      {
+        "position": "Web programmer",
+        "companyName": "GESO 'PÁGINAS WEB'",
+        "city": "Remote",
+        "start": "2018",
+        "end": "2019",
+        "tasks": [
+          "Responsible for developing various web pages for the company's clients."
+        ]
+      },
+      {
+        "position": "Freelance programmer",
+        "start": "2015",
+        "end": "2018",
+        "tasks": [
+          "I made from simple web pages and programs to more elaborate systems, programmed in Java, C#, C++, Visual Basic .Net and PHP"
+        ]
+      }
+    ]
+  },
+  "education": {
+    "title": "Education",
+    "content": [
+      {
+        "school": "Computer Systems Engineer, Instituto Tecnológico de Saltillo",
+        "start": "August 2014",
+        "end": "June 2019"
+      },
+      {
+        "school": "IT technician, Centro de Estudios Tecnológicos, Industriales y de Servicio #48",
+        "start": "August 2011",
+        "end": "June 2014"
+      }
+    ]
+  },
+  "skills": {
+    "title": "Technical skills",
+    "database": "Database",
+    "others": "And other technologies."
+  },
+  "participations": {
+    "title": "Participations and assists",
+    "content": "Programming and networking competitions. Online courses, congresses, talks, Talent land and hackathons."
+  }
+}
