@@ -25,7 +25,7 @@
   },
   "professionalProfile": {
     "title": "Professional profile",
-    "content": "Enthusiastic about technology, programming and learning something new every day. With more than 5 years of experience with Javascript. I have been a programmer from an early age. I seek to improve my skills as a programmer and as a person. I like to teach and motivate other people what I have learned and how to improve their skills. I'm a person who is passionate about quality in code."
+    "content": "Enthusiastic about technology, programming and learning something new every day. With over 5 years of hands-on experience in JavaScript . I have been a programmer from an early age and since then I have had a relentless drive to continually expand my skill set. I am always looking to improve my skills as a programmer and as a person. I like to teach and motivate other people what I have learned and how to improve their skills. I am a person who is passionate about code quality and doing things right, with the best practices."
   },
   "workExperience": {
     "title": "Work experience",
@@ -37,8 +37,10 @@
         "start": "July 2019",
         "end": "Present",
         "tasks": [
-          "Responsible for projects that involve web development (JS), such as a social event management system, a dining room system for dish order management, and more internal projects.",
-          "Together with a small team, I developed an ERP (with React and Node), which I was in charge of selecting the technologies and their architecture."
+          "Responsible for projects that involve web development (JS), such as a social event management system, a dining room system for dish order management.",
+          "Together with a small team, I developed an ERP (with React and Node), which I was in charge of selecting the technologies and their architecture.",
+          "Development of a detainee registration system in React and Node, this system implemented fingerprint and face recognition",
+          "Among otherinternal projects."
         ]
       },
       {
@@ -59,7 +61,7 @@
         "start": "2018",
         "end": "2019",
         "tasks": [
-          "Responsible for developing various web pages for the company's clients."
+          "Responsible for developing various web pages for the company's clients. Only using HTML, CSS and VanillaJS and sometimes JQuery."
         ]
       },
       {

@@ -110,9 +110,11 @@ const Page = ({ params: { lng } }: { params: { lng: string } }) => {
         </div>
         <div className={styles.rightSection}>
           <LanguageSelector lng={lng} />
-          <div className={styles.professionalProfile}>
+          <div>
             <h2 className={styles.title}>{t("professionalProfile.title")}</h2>
-            <p>{t("professionalProfile.content")}</p>
+            <p className={styles.profileDescription}>
+              {t("professionalProfile.content")}
+            </p>
           </div>
           <div className={styles.workExperience}>
             <h2 className={styles.title}>{t("workExperience.title")}</h2>

@@ -26,9 +26,11 @@ const WorkExperienceCard: React.FC<WorkExperienceCardProps> = ({
     <small className={styles.dates}>
       {start} - {end}
     </small>
-    <div>
+    <div className={styles.tasksContainer}>
       {tasks.map((t, i) => (
-        <p key={i}>{t}</p>
+        <p key={i} className={styles.tasks}>
+          {t}
+        </p>
       ))}
     </div>
   </div>
