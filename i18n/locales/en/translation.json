@@ -40,7 +40,7 @@
           "Responsible for projects that involve web development (JS), such as a social event management system, a dining room system for dish order management.",
           "Together with a small team, I developed an ERP (with React and Node), which I was in charge of selecting the technologies and their architecture.",
           "Development of a detainee registration system in React and Node, this system implemented fingerprint and face recognition",
-          "Among otherinternal projects."
+          "Among other internal projects."
         ]
       },
       {
@@ -95,7 +95,7 @@
     "others": "And other technologies."
   },
   "participations": {
-    "title": "Participations and assists",
+    "title": "Participations and attendances",
     "content": "Programming and networking competitions. Online courses, congresses, talks, Talent land and hackathons."
   }
 }

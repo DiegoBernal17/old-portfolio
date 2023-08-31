@@ -17,13 +17,13 @@ const data = {
     platzi: "https://platzi.com/p/diego-p-bernal/",
     github: "https://github.com/DiegoBernal17",
   },
-  englishLevel: "B1",
+  englishLevel: "B2",
   skills: {
-    frontend: "HTML, CSS, Javascript, React, NextJS, Svelte",
+    frontend: "HTML, CSS, Javascript, React, NextJS, Remix, Svelte",
     backend: "NodeJS, Express, NestJS, GraphQL",
     devops:
       "Linux, terminal, ssl, ssh, process monitoring, aws, deployments, CI/CD, Server provisioning, DBA",
-    databases: "MariaDB, MongoDB, Firebase",
+    databases: "MariaDB, MongoDB, Firebase, PostgresSQL",
   },
 };
 
